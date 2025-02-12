@@ -13,8 +13,8 @@ import random
 # echo=True， 可以在控制台看到操作涉及的SQL语言
 
 # 数据库配置 -> 换成自己的
-username = "root"
-password = "zgc112912"
+username = ""
+password = ""
 database = "yuedong"
 
 # session = Session()
