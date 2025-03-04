@@ -86,7 +86,7 @@ if __name__ == '__main__':
     # 创建缓存对象
     Session = sessionmaker(bind=engine)
     database_session = Session()
-    
+
     # 测试用户数据
     test_users = [
         user(openID='openid1', username='Alice', sex=1, phone='12345678901'),

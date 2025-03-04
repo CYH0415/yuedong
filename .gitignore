@@ -9,3 +9,6 @@ target/
 .DS_Store
 __MACOSX/
 
+# personal config
+application.properties
+database.py
