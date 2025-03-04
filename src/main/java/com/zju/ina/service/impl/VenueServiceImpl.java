@@ -32,15 +32,13 @@ public class VenueServiceImpl implements VenueService {
         List<Session> sessions = sessionMapper.getSessionsByVenueID(venueID);
 
         // 封装成 VenueInfo 对象
-        VenueInfo venueInfo = new VenueInfo(
+        return new VenueInfo(
                 venue.getVenueID(),
                 venue.getVenueName(),
                 venue.getVenueAddr(),
                 venue.getScore(),
                 sessions
         );
-
-        return venueInfo;
     }
 
     public List<Venue> searchVenues(String searchInfo) {

@@ -7,17 +7,17 @@ package com.zju.ina.entity;
 public class Session {
     private String sessionID;
     private String venueID;
-    private String region;
+    private String area;
     private String date;
     private String startTime;
     private String endTime;
     private Double price;
     private int status;
 
-    public Session(String sessionID, String venueID, String region, String date, String startTime, String endTime, Double price, int status) {
+    public Session(String sessionID, String venueID, String area, String date, String startTime, String endTime, Double price, int status) {
         this.sessionID = sessionID;
         this.venueID = venueID;
-        this.region = region;
+        this.area = area;
         this.date = date;
         this.startTime = startTime;
         this.endTime = endTime;
@@ -41,12 +41,12 @@ public class Session {
         this.venueID = venueID;
     }
 
-    public String getRegion() {
-        return region;
+    public String getArea() {
+        return area;
     }
 
-    public void setRegion(String region) {
-        this.region = region;
+    public void setArea(String area) {
+        this.area = area;
     }
 
     public String getDate() {
@@ -94,7 +94,7 @@ public class Session {
         return "Session{" +
                 "sessionID='" + sessionID + '\'' +
                 ", venueID='" + venueID + '\'' +
-                ", region='" + region + '\'' +
+                ", area='" + area + '\'' +
                 ", date='" + date + '\'' +
                 ", startTime='" + startTime + '\'' +
                 ", endTime='" + endTime + '\'' +

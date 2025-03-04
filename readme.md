@@ -12,6 +12,8 @@
 
 另外，`\src\main\resources\application.properties` 文件中的数据库配置也需要修改为自己的配置信息。
 
+- 注意先将文件后的`.example`后缀删去
+
 ## 开发文档
 
 数据库设计文档：https://ai15higs684.feishu.cn/docx/DKkudUzBCoAHT5xsSDMcV5TjnOU?from=from_copylink
@@ -20,4 +22,4 @@
 
 ## 注意事项
 
-大家提交代码时请确保代码是可以正常运行的，另外相关功能模块实现完后需要利用 ApiPost 模拟前端请求简单测试一下，将返回数据示例截图放入接口文档中
+提交代码时如果修改过database.py，记得删去个人信息后粘贴进example

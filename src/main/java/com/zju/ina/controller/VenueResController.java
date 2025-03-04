@@ -34,7 +34,7 @@ public class VenueResController {
     @Autowired
     private VenueService venueService;
 
-    @GetMapping("/searchVenues")
+    @GetMapping("/searchVenue")
     public Message searchVenues(@RequestParam String searchInfo) {
         List<Venue> venueList = venueService.searchVenues(searchInfo);
         if (venueList != null && !venueList.isEmpty()) {
