@@ -14,9 +14,9 @@ import java.util.List;
  */
 @Mapper
 public interface VenueMapper {
-    @Select("SELECT * FROM venue WHERE venueID = #{venueID}")
+    @Select("SELECT * FROM venue WHERE venue_id = #{venueID}")
     Venue getVenueByVenueID(@Param("venueID") String venueID);
     // 模糊搜索场馆信息
-    @Select("SELECT * FROM venue WHERE venueName LIKE CONCAT('%', #{searchInfo}, '%')")
+    @Select("SELECT * FROM venue WHERE venue_name LIKE CONCAT('%', #{searchInfo}, '%')")
     List<Venue> searchVenues(@Param("searchInfo") String searchInfo);
 }
